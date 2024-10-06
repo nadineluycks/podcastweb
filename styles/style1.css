@@ -1,7 +1,7 @@
 * {
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -9,30 +9,23 @@ body {
 }
 
 header h1 {
-    width: 2, 5em;
-    padding: 1em;
-    box-sizing: border-box;
-    margin-top: 1em;
-    text-align: center; 
-} 
+    text-align: center;
+}
 
 nav ul {
-    padding: 1em;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style: none;
-    border-radius: 1em;
-
 }
 
 li {
-    margin-right: 4cap;
     padding: 1em;
 }
 
 li:hover {
     background-color: pink;
     transition: 250ms ease;
+    border-radius: 1em;
 }
 
 a {
@@ -42,21 +35,29 @@ a {
 main article {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 192, 203);
-    /* padding: 1em;
-    margin: 1em; */
-    width: 50%;
-    display: flex;
-
+    padding: 1em;
+    margin: 1em;
+    border-radius: 2em;
 }
 
-main div {
+main>div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
+main>div article {
+    width: 30%;
+}
+
+main article>div {
+    display: flex;
+    align-items: flex-start;
+}
+/* een klasgenoot heeft mij geholpen met de > bij de divs te plaatsen zodat mijn flexbox het deed. Ik weet nu waarom het niet werkte en snap ook wat > inhoud */
+
 Header img {
-    width: 350px;
+    width: 10em;
     border-radius: 50%;
 }
 
@@ -65,9 +66,24 @@ main div img {
     width: 50%;
 }
 
-article div div {
+main section {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 192, 203);
+    margin: 2em;
+    padding: 4em;
+    border-radius: 5em;
+}
+
+main section {
     display: flex;
-    
-    background-color: rgb(255, 128, 0);
-    
+    justify-content: space-evenly;
+}
+
+strong {
+    font-weight: bold;
+    font-size: larger;
+}
+
+iframe {
+    border: none
 }
